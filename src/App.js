@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <main className="App">
-      <div className="row">
+      <div className="row mt-5">
         <div className="col">
           <h1>{weatherData.city}</h1>
           <h2>{weatherData.date}</h2>
