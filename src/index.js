@@ -13,6 +13,12 @@ ReactDOM.render(
         <Search />
         <App />
       </div>
+      <footer>
+        This project is coded by Rebecca Leep and is{" "}
+        <a href="https://github.com/darksteel101/weather-react" target="blank">
+          open-sourced on GitHub
+        </a>
+      </footer>
     </div>
   </React.StrictMode>,
   document.getElementById("root")
