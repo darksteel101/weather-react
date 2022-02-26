@@ -9,7 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <div class="wrapper">
       <div class="container">
-        <App />
+        <App defaultCity="New York" />
       </div>
       <footer>
         This project is coded by Rebecca Leep and is{" "}
