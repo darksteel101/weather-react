@@ -10,7 +10,6 @@ ReactDOM.render(
   <React.StrictMode>
     <div class="wrapper">
       <div class="container">
-        <Search />
         <App />
       </div>
       <footer>

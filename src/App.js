@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./App.css";
 
 export default function App() {
@@ -10,9 +11,36 @@ export default function App() {
     humidity: 1,
     wind: 5,
   };
+  const [city, setCity] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert(`searching for ${city}`);
+  }
+
+  function updateCity(event) {
+    setCity(event.target.value);
+  }
 
   return (
     <main className="App">
+      <div className="Search">
+        <form className="search-form" id="search-form" onSubmit={handleSubmit}>
+          <input
+            type="search"
+            placeholder="Enter a city"
+            autofocus="on"
+            autocomplete="off"
+            className="search-bar"
+            id="city-input"
+            onChange={updateCity}
+          />
+          <button className="search-button btn btn-primary">Search</button>
+          <button id="current-button" className="btn btn-success">
+            Current
+          </button>
+        </form>
+      </div>
       <div className="row mt-5">
         <div className="col">
           <h1>{weatherData.city}</h1>
