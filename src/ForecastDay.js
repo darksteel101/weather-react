@@ -23,7 +23,7 @@ export default function ForecastDay(props) {
   return (
     <div>
       <div className="weekday">{day()}</div>
-      <img src={props.data.weather[0].icon} alt="/"></img>
+      {/* <img src={props.data.weather[0].icon} alt="/"></img> */}
       <div className="Temperatures">
         <span className="MaxTemperature">{maxTemperature()}</span>
         <span className="MinTemperature">{minTemperature()}</span>
