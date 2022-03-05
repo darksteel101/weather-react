@@ -18,10 +18,7 @@ export default function WeatherForecast(props) {
       <div className="row">
         <div className="col">
           <div className="weekday">Sat</div>
-          <img
-            src={response.data.iconUrl}
-            alt={response.data.description}
-          ></img>
+          <img src={props.data.iconUrl} alt={props.data.description}></img>
           <div className="Temperatures">
             <span className="MaxTemperature">20°</span>
             <span className="MinTemperature">10°</span>
