@@ -56,9 +56,6 @@ export default function App(props) {
               onChange={handleCityChange}
             />
             <button className="search-button btn btn-primary">Search</button>
-            <button id="current-button" className="btn btn-success">
-              Current
-            </button>
           </form>
         </div>
         <WeatherInfo data={weatherData} />
